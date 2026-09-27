@@ -1,0 +1,62 @@
+[
+  {
+    "model": "mine",
+    "n": 747,
+    "errors": 0,
+    "accuracy": {
+      "tev1_dev": 0.8583,
+      "phishing": 0.4767,
+      "tool_risk": 0.8833,
+      "ticket_routing": 0.8889
+    },
+    "accuracy_overall": 0.7082,
+    "brier": 0.4348,
+    "ece": 0.2117,
+    "latency_ms": {
+      "p50": 118.2,
+      "p90": 192.4,
+      "p99": 282.7,
+      "mean": 132.4
+    },
+    "burst": {
+      "requests": 200,
+      "concurrency": 16,
+      "wall_s": 6.08,
+      "rps": 32.91,
+      "p50_ms": 414.4,
+      "p99_ms": 948.2
+    },
+    "avg_input_tokens": 345,
+    "cost_per_1k_usd": 0.00414
+  },
+  {
+    "model": "jev",
+    "n": 747,
+    "errors": 0,
+    "accuracy": {
+      "tev1_dev": 0.8056,
+      "phishing": 0.64,
+      "tool_risk": 0.9167,
+      "ticket_routing": 1.0
+    },
+    "accuracy_overall": 0.755,
+    "brier": 0.3553,
+    "ece": 0.1105,
+    "latency_ms": {
+      "p50": 268.9,
+      "p90": 300.7,
+      "p99": 411.0,
+      "mean": 273.4
+    },
+    "burst": {
+      "requests": 200,
+      "concurrency": 16,
+      "wall_s": 3.88,
+      "rps": 51.58,
+      "p50_ms": 289.0,
+      "p99_ms": 644.4
+    },
+    "avg_input_tokens": 554,
+    "cost_per_1k_usd": 0.02325
+  }
+]

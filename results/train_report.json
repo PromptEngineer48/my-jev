@@ -1,0 +1,60 @@
+{
+  "base_model": "unsloth/Qwen3.5-4B",
+  "train_rows": 37840,
+  "train_minutes": 282.2,
+  "gpu": "NVIDIA A40",
+  "final_train_loss": 0.1853763725238421,
+  "settings": {
+    "data": "tev1/data/new-v1",
+    "base": "unsloth/Qwen3.5-4B",
+    "out": "outputs/my-jev-4b",
+    "max_seq_length": 2048,
+    "load_in_4bit": false,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lr": 5e-05,
+    "epochs": 1,
+    "batch_size": 8,
+    "grad_accum": 1,
+    "eval_n": 600,
+    "max_train": 0,
+    "gguf": false,
+    "seed": 42
+  },
+  "baseline": {
+    "n": 594,
+    "accuracy": 0.7255892255892256,
+    "brier": 0.3716839207294157,
+    "ece": 0.0378846723824639,
+    "ms_per_example": 103.12247573576792,
+    "per_source": {
+      "ag_news": 0.8636,
+      "banking77": 0.8333,
+      "boolq": 0.8636,
+      "mnli": 0.7576,
+      "policy": 0.803,
+      "policy_v2": 0.5303,
+      "research_taxonomy_v21": 0.9394,
+      "routing_v2": 0.5455,
+      "sst5": 0.3939
+    }
+  },
+  "fine_tuned": {
+    "n": 594,
+    "accuracy": 0.8720538720538721,
+    "brier": 0.16916306467154826,
+    "ece": 0.04823897799056786,
+    "ms_per_example": 107.11409845812754,
+    "per_source": {
+      "ag_news": 0.8788,
+      "banking77": 0.8485,
+      "boolq": 0.9394,
+      "mnli": 0.8182,
+      "policy": 0.9848,
+      "policy_v2": 0.9545,
+      "research_taxonomy_v21": 1.0,
+      "routing_v2": 0.8788,
+      "sst5": 0.5455
+    }
+  }
+}

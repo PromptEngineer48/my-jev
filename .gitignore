@@ -1,0 +1,8 @@
+.env
+__pycache__/
+.venv*/
+tev1/
+outputs/
+bench_results/
+bench_base/
+*.log
